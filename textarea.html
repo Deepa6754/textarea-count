@@ -1,0 +1,40 @@
+<html>
+<style>
+#a
+{
+
+border:5px solid red;
+height:200px;
+width:250px;
+//background-image:url('1.jpg');
+background-color:#FFFFFF;
+}
+body
+{
+background-image:url('13.jpg');
+}
+h1
+{
+}
+</style>
+<script>
+function charcount(obj)
+{
+var len=obj.value.length;
+document.getElementById("d").innerHTML=len;
+if(len==50)
+{
+alert("COMPLETED");
+document.getElementById("t").style.display='non';
+}
+}
+</script>
+<body onLoad="disp();"><center>
+<div id="a">
+<textarea id="t" onkeyup="charcount(this);"></textarea><br>
+<h1>char:<span id="d"></span><span id="max">[50]</span></h1>
+</div>
+<h1>DEEPA MAURYA</h1>
+</center>
+</body>
+</html>
